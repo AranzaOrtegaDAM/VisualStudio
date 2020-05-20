@@ -31,11 +31,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tNombre = new System.Windows.Forms.TextBox();
-            this.tApellido = new System.Windows.Forms.TextBox();
+            this.tApellidos = new System.Windows.Forms.TextBox();
             this.Apellido = new System.Windows.Forms.Label();
             this.tTelefono = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tListaSocios = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -47,6 +47,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -59,17 +60,17 @@
             // 
             // tNombre
             // 
-            this.tNombre.Location = new System.Drawing.Point(325, 41);
+            this.tNombre.Location = new System.Drawing.Point(88, 46);
             this.tNombre.Name = "tNombre";
             this.tNombre.Size = new System.Drawing.Size(168, 20);
             this.tNombre.TabIndex = 5;
             // 
-            // tApellido
+            // tApellidos
             // 
-            this.tApellido.Location = new System.Drawing.Point(88, 45);
-            this.tApellido.Name = "tApellido";
-            this.tApellido.Size = new System.Drawing.Size(168, 20);
-            this.tApellido.TabIndex = 7;
+            this.tApellidos.Location = new System.Drawing.Point(325, 45);
+            this.tApellidos.Name = "tApellidos";
+            this.tApellidos.Size = new System.Drawing.Size(168, 20);
+            this.tApellidos.TabIndex = 7;
             // 
             // Apellido
             // 
@@ -82,7 +83,7 @@
             // 
             // tTelefono
             // 
-            this.tTelefono.Location = new System.Drawing.Point(577, 41);
+            this.tTelefono.Location = new System.Drawing.Point(577, 45);
             this.tTelefono.Name = "tTelefono";
             this.tTelefono.Size = new System.Drawing.Size(168, 20);
             this.tTelefono.TabIndex = 9;
@@ -96,14 +97,14 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Teléfono";
             // 
-            // textBox1
+            // tListaSocios
             // 
-            this.textBox1.Location = new System.Drawing.Point(41, 133);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(704, 295);
-            this.textBox1.TabIndex = 10;
+            this.tListaSocios.Location = new System.Drawing.Point(41, 133);
+            this.tListaSocios.Multiline = true;
+            this.tListaSocios.Name = "tListaSocios";
+            this.tListaSocios.ReadOnly = true;
+            this.tListaSocios.Size = new System.Drawing.Size(704, 295);
+            this.tListaSocios.TabIndex = 10;
             // 
             // label3
             // 
@@ -120,10 +121,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tListaSocios);
             this.Controls.Add(this.tTelefono);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.tApellido);
+            this.Controls.Add(this.tApellidos);
             this.Controls.Add(this.Apellido);
             this.Controls.Add(this.tNombre);
             this.Controls.Add(this.label1);
@@ -140,11 +141,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tNombre;
-        private System.Windows.Forms.TextBox tApellido;
+        private System.Windows.Forms.TextBox tApellidos;
         private System.Windows.Forms.Label Apellido;
         private System.Windows.Forms.TextBox tTelefono;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tListaSocios;
         private System.Windows.Forms.Label label3;
     }
 }

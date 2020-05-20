@@ -16,5 +16,10 @@ namespace Práctica_GIT
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tListaSocios.Text = tListaSocios.Text + "\n" + tNombre.Text + " " + tApellidos.Text + " " + tTelefono.Text;
+        }
     }
 }
